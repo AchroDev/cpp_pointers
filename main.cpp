@@ -7,7 +7,7 @@ int main()
     char* buffer = new char[8]; // allocating 8 bytes of memory
     memset(buffer, 0, 8); // sets the memory at the buffer address to the value 0 for 8 bytes.
     
-    delete[] buffer; // deletes the manual allocation
+    char** ptr = &buffer; // this is a pointer to a pointer
     
     std::cin.get();
 }
