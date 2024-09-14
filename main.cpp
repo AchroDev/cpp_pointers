@@ -4,12 +4,8 @@
 
 int main()
 {
-    int var = 8;
-    
-    // Pointers are memory addresses, types are used to presume what data is at the address
-    int* ptr = &var; // & is a reference to the integer 'var' memory address. 
-    *ptr = 10; // dereferencing the pointer and going directly to the data    
-    LOG(var);
+    char* buffer = new char[8]; // allocating 8 bytes of memory
+    memset(buffer, 0, 8); // sets the memory at the buffer address to the value 0 for 8 bytes.
     
     std::cin.get();
 }
